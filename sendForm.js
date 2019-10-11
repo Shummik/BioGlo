@@ -9,7 +9,7 @@ const sendForm = () => {
     formArr.forEach((item) => {
         item.addEventListener('input', (elem) => {
 
-            // валидация 
+/*             // валидация 
             if (elem.target.name === 'user_name') {
                 elem.srcElement.value = elem.srcElement.value.replace(/[^а-яА-ЯёЁ ]/gi, ``);
             } else if (elem.target.name === 'user_phone') {
@@ -21,11 +21,11 @@ const sendForm = () => {
                 elem.srcElement.value = elem.srcElement.value.replace(/[^а-яА-ЯёЁ ]/gi, ``);
             } else {
                 return;
-            } 
+            } */
 
         });
         const statusMessage = document.createElement('div');
-        statusMessage.style.cssText = 'font-size: 2rem; color: black';
+        statusMessage.style.cssText = 'font-size: 2rem; color: white';
 
         item.addEventListener('submit', (event) => {
             event.preventDefault();

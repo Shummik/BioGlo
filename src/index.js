@@ -33,10 +33,11 @@ togglePopup('.popup-consultation', '.director-btn');
 togglePopup('.popup-discount', '.sentence-btn');
 
 // Отправка форм
-document.body.addEventListener('submit', (event) => {
-  event.preventDefault();
-  sendForm(event.target);
-});
+// document.body.addEventListener('submit', (event) => {
+//   event.preventDefault();
+//   sendForm(event.target);
+// });
+sendForm();
 
 // Вопрос клиента
 const question = document.getElementById('question__input');
@@ -46,9 +47,9 @@ question.addEventListener('input', () => {
 });
 
 // Запрет ввода символов
-chooseReg('input[type="tel"]', /[^0-9+]/g); // Для телефона
-chooseReg('.distance', /[^0-9]/g); // Расстояние в аккордеоне 
-chooseReg('input[name="user_name"]', /[^а-яА-ЯёЁ\ ]/g); // Для текстовых полей
+// chooseReg('input[type="tel"]', /[^0-9+]/g); // Для телефона
+// chooseReg('.distance', /[^0-9]/g); // Расстояние в аккордеоне 
+// chooseReg('input[name="user_name"]', /[^а-яА-ЯёЁ\ ]/g); // Для текстовых полей
 
 const phoneUser = document.querySelectorAll('.phone-user');
 
