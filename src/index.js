@@ -22,15 +22,7 @@ import moreInfo from './modules/moreInfo'; // Открытие доп карто
 
 
 // Модальные окно
-togglePopup('.popup-call', '.call-btn');
-togglePopup('.popup-discount', '.calc-btn');
-let sellBtn = document.querySelector('.sell');
-sellBtn.addEventListener('click', () => {
-  togglePopup('.popup-discount', '.sell');
-});
-togglePopup('.popup-check', '.check-btn');
-togglePopup('.popup-consultation', '.director-btn');
-togglePopup('.popup-discount', '.sentence-btn');
+togglePopup();
 
 // Отправка форм
 // document.body.addEventListener('submit', (event) => {
